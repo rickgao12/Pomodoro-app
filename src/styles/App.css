@@ -1,0 +1,42 @@
+html,
+body,
+#root {
+  font: 0.9rem sans-serif;
+  background: #0a1f44;
+  color: #1e2432;
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.418)), url('../img/cool-background.png');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pomodoro-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: red;
+}
+
+.break-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: orange;
+}
+
+.time-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: green;
+}
