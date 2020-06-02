@@ -1,13 +1,12 @@
 import React from 'react';
 import moment from 'moment';
 import momentDurationFormatSetup from 'moment-duration-format';
+import '../styles/Session.css';
 import IconButton from '@material-ui/core/IconButton';
 import RemoveIcon from '@material-ui/icons/Remove';
 import Typography from '@material-ui/core/Typography';
 import AddIcon from '@material-ui/icons/Add';
-import '../styles/Break.css';
 import { withStyles } from '@material-ui/core';
-
 momentDurationFormatSetup(moment);
 
 const styles = {
@@ -16,7 +15,7 @@ const styles = {
 		borderRadius: 3,
 		border: 1,
 		color: 'white',
-		height: 34,
+		height: '34px',
 		padding: '0 5px',
 		margin: '0 5px',
 		'@media (max-width: 780px)': {
@@ -40,20 +39,20 @@ const styles = {
 	}
 };
 
-const Break = ({ classes, breakLen, incrementBreak, decrementBreak }) => {
-	const formattedTime = moment.duration(breakLen, 's').format('mm:ss');
+const Session = ({ classes, sessionLen, incrementSessionLen, decrementSessionLen }) => {
+	const formattedTime = moment.duration(sessionLen, 's').format('mm:ss');
 	return (
-		<div className="break-container">
-			<p className="description">Break length</p>
+		<div className="session-container">
+			<p className="description">Session length</p>
 
-			<div className="break-btns">
-				<IconButton className={classes.root} aria-label="add" size="small" onClick={incrementBreak}>
+			<div className="session-btns">
+				<IconButton className={classes.root} aria-label="add" size="small" onClick={incrementSessionLen}>
 					<AddIcon fontSize="inherit" />
 				</IconButton>
 				<Typography>
 					<span className="time-label">{formattedTime}</span>
 				</Typography>
-				<IconButton className={classes.root} aria-label="delete" size="small" onClick={decrementBreak}>
+				<IconButton className={classes.root} aria-label="delete" size="small" onClick={decrementSessionLen}>
 					<RemoveIcon fontSize="inherit" />
 				</IconButton>
 			</div>
@@ -61,4 +60,4 @@ const Break = ({ classes, breakLen, incrementBreak, decrementBreak }) => {
 	);
 };
 
-export default withStyles(styles)(Break);
+export default withStyles(styles)(Session);
