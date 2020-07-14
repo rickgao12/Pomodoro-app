@@ -64,17 +64,24 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		width: 100vw;
 	}
 	.sidebar {
 		margin-top: 10px;
 		flex-direction: row;
 		order: 2;
 		width: 80vw;
-		height: 40%;
+		height: 25vh;
 		flex-wrap: wrap;
 	}
 	.btn-container {
 		display: flex;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.reset-container {
+		margin: 5px;
 	}
 }
 

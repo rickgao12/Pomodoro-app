@@ -2,7 +2,7 @@
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	//justify-content: space-evenly;
 	align-items: center;
 }
 
@@ -55,14 +55,23 @@
 }
 
 @media only screen and (max-width: 548px) {
+	.current-time {
+		height: 30vh;
+		margin-top: 0;
+	}
 	.current-time-label {
 		font-size: 35px;
 	}
-
+	.total-time {
+		margin-top: 0;
+		height: 20vh;
+	}
 	.current-time-header {
 		font-size: 25px;
 	}
-
+	.start-btn {
+		margin-top: 10px;
+	}
 	.total-time-label {
 		font-size: 25px;
 	}
@@ -84,6 +93,7 @@
 	.start-btn {
 		width: 1rem;
 		height: 2rem;
+		margin-top: 10px;
 		font-size: 20%;
 	}
 }
