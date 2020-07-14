@@ -1,45 +1,49 @@
 .break-container {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .description {
-  font-size: 20px;
-  padding: 2px;
-  margin-bottom: 1px;
-  border-radius: 3px;
+	font-size: 20px;
+	padding: 2px;
+	margin-bottom: 1px;
+	border-radius: 3px;
 }
 
 .time-label {
-  font-size: 20px;
-  padding: 2px;
-  margin-bottom: 1px;
-  border-radius: 3px;
+	font-size: 20px;
+	padding: 2px;
+	margin-bottom: 1px;
+	border-radius: 3px;
 }
 
 .break-btns {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
 }
 
 @media only screen and (max-width: 602px) {
-  .description {
-    font-size: 16px;
-  }
+	.description {
+		font-size: 16px;
+	}
+}
+@media only screen and (max-width: 520px) {
+	.break-btns {
+		padding: .3rem;
+	}
 }
 
 @media only screen and (max-width: 400px) {
-  .description {
-    font-size: 14px;
-  }
+	.description {
+		font-size: 14px;
+	}
 }
 
 @media only screen and (max-width: 330px) {
-  .description {
-    font-size: 12px;
-  }
+	.description {
+		font-size: 12px;
+	}
 }

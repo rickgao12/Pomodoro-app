@@ -1,5 +1,5 @@
 .time {
-	height: 100%;
+	height: 70%;
 	display: flex;
 	flex-direction: column;
 	//justify-content: space-evenly;
@@ -7,7 +7,6 @@
 }
 
 .current-time {
-	margin-top: 2rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -37,8 +36,16 @@
 }
 
 @media only screen and (max-width: 1137px) {
+	.current-time,
+	.total-time {
+		font-size: 70%;
+	}
+	.current-time-label,
+	.total-time-label {
+		font-size: 30px;
+	}
 	.time-label {
-		font-size: 35px;
+		font-size: 25px;
 	}
 }
 

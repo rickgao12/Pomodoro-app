@@ -1,7 +1,7 @@
 .container {
 	display: flex;
 	width: 50%;
-	height: 60%;
+	height: 60vh;
 }
 
 .sidebar {
@@ -79,9 +79,9 @@
 	}
 }
 
-@media only screen and (max-width: 500px) {
-	.reset-container {
-		margin: 5px;
+@media only screen and (max-width: 520px) {
+	.reset-btn {
+		margin: 3px;
 	}
 }
 
